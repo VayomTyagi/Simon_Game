@@ -164,11 +164,11 @@ h1 {
     background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
 }
 
-.yellow {
+.red {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-.red {
+.yellow {
     background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 }
 
@@ -291,3 +291,4 @@ h1 {
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
+
