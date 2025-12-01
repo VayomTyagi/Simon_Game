@@ -21,6 +21,17 @@ document.addEventListener("keydown", function () {
   }
 });
 
+let stbtn=document.body.querySelector("#start");
+stbtn.addEventListener("click", function () {
+  if (!started) {
+    started = true;
+    level = 0;
+    gameSeq = [];
+    nextRound();
+  }
+});
+
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -101,3 +112,4 @@ function resetGame() {
   isPlaying = false;
   levNo.textContent = "Press any key to start";
 }
+
