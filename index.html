@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Say Game</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Simon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1 id="title">Simon Game</h1>
-    <h3 id="levelno">Click any Key to start The game</h3>
-    <div id="playground">
-        <div class="line1">
-            <div class="box green" type="button"></div>
-            <div class="box yellow" type="button"></div>
-        </div> 
-        <div class="line2">
-            <div class="box red" type="button"></div>
-            <div class="box blue" type="button"></div>
+    <div class="container">
+        <h1>SIMON</h1>
+        
+        <div class="info-card">
+            <div id="levelno">Press Start to Begin</div>
         </div>
+
+        <div class="score-section">
+            <div class="score-box">
+                <div class="score-label">Level</div>
+                <div class="score-value" id="level-display">0</div>
+            </div>
+            <div class="score-box">
+                <div class="score-label">Best</div>
+                <div class="score-value" id="best-display">0</div>
+            </div>
+        </div>
+
+        <div id="playground">
+            <div class="box green" data-color="green"></div>
+            <div class="box yellow" data-color="yellow"></div>
+            <div class="box red" data-color="red"></div>
+            <div class="box blue" data-color="blue"></div>
+        </div>
+
+        <button class="btn-start" id="start">
+            <span>Start Game</span>
+        </button>
     </div>
-    <button id="start">Start the game</button>
+
     <script src="app.js"></script>
 </body>
-
 </html>
